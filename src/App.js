@@ -1,7 +1,13 @@
+// Global
+import Routes from './routes'
+
+// Assets
+import './global.css'
+
 function App() {
   return (
     <div className="App">
-      <h1>GOH Dash</h1>
+      <Routes />
     </div>
   );
 }
