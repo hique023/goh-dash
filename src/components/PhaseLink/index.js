@@ -14,16 +14,22 @@ export default function PhaseLink(props) {
     }
 
     function phaseGo() {
-        history.push('/phase')
+
+        if (props.page === "fase") {
+            history.push('/phase')
+        } else if (props.page === "users") {
+            history.push('/users')
+        } else if (props.page === "etapa") {
+            history.push('/stagemanagement')
+        }
+
         localStorage.setItem('phaseName', props.name)
-        // localStorage.setItem('subBarName', props.name)
         localStorage.setItem('phaseId', props.phaseId)
         localStorage.setItem('color', props.color)
     }
 
     return (
         <div className="containerPhaseLink">
-            {/* <button onClick={phaseGo} style={cardStyle}>{props.name}</button> */}
             <button onClick={phaseGo} style={cardStyle}>
                 <img src={props.url} alt="Phase" />
             </button>

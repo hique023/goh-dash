@@ -14,12 +14,12 @@ import { BsGearFill } from "react-icons/bs";
 export default function ListPhases() {
     return (
         <div className="containerListPhases">
-            <PhaseLink name="Fase 01" phaseId="fase1" url={phase1} color="var(--blue)" />
-            <PhaseLink name="Fase 02" phaseId="fase2" url={phase2} color="var(--yellow)" />
-            <PhaseLink name="Fase 03" phaseId="fase3" url={phase3} color="var(--wine)" />
-            <PhaseLink name="Fase 04" phaseId="fase4" url={phase4} color="var(--green)" />
-            <PhaseLink name="Usuários" phaseId="users" url={phase4} color="var(--block)" />
-            <PhaseLink name="Gestão de Etapas" phaseId="stageManagement" url={phase4} color="var(--blue-soft)" />
+            <PhaseLink name="Fase 01" phaseId="fase1" page="fase" url={phase1} color="var(--blue)" />
+            <PhaseLink name="Fase 02" phaseId="fase2" page="fase" url={phase2} color="var(--yellow)" />
+            <PhaseLink name="Fase 03" phaseId="fase3" page="fase" url={phase3} color="var(--wine)" />
+            <PhaseLink name="Fase 04" phaseId="fase4" page="fase" url={phase4} color="var(--green)" />
+            <PhaseLink name="Usuários" phaseId="users" page="users" url={phase4} color="var(--block)" />
+            <PhaseLink name="Gestão de Etapas" phaseId="stageManagement" page="etapa" url={phase4} color="var(--blue-soft)" />
         </div>
     )
 }
