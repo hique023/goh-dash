@@ -18,8 +18,8 @@ export default function ListPhases() {
             <PhaseLink name="Fase 02" phaseId="fase2" url={phase2} color="var(--yellow)" />
             <PhaseLink name="Fase 03" phaseId="fase3" url={phase3} color="var(--wine)" />
             <PhaseLink name="Fase 04" phaseId="fase4" url={phase4} color="var(--green)" />
-            <PhaseLink name="Usuários" phaseId="users" url={FaUsersCog} color="var(--block)" />
-            <PhaseLink name="Gestão de Etapas" phaseId="stageManagement" url={BsGearFill} color="var(--blue-soft)" />
+            <PhaseLink name="Usuários" phaseId="users" url={phase4} color="var(--block)" />
+            <PhaseLink name="Gestão de Etapas" phaseId="stageManagement" url={phase4} color="var(--blue-soft)" />
         </div>
     )
 }
