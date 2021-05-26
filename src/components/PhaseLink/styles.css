@@ -1,0 +1,22 @@
+.containerPhaseLink {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.containerPhaseLink button {
+  background-color: darkorange;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  outline: hidden;
+  border: none;
+  transform: opacity 0.2s;
+}
+
+.containerPhaseLink button:hover {
+  opacity: 0.8;
+}
+
+.containerPhaseLink button img {
+  width: 20vh;
+}
