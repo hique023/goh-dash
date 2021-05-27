@@ -1,0 +1,27 @@
+.topBarPhase {
+  background-color: var(--green-soft);
+  width: 100%;
+  height: 12vh;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  /* margin-top: 10px; */
+}
+
+.topBarPhase .leftTopBarPhase {
+  display: flex;
+  align-items: center;
+}
+
+.topBarPhase .leftTopBarPhase h1 {
+  font: 25px "Press Start 2P", sans-serif;
+}
+
+.topBarPhase button {
+  background-color: transparent;
+  border: 0;
+}
