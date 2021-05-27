@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 
 // Assets
 import './styles.css'
-import { GiPadlockOpen, GiPadlock } from "react-icons/gi";
+import { BsGearFill } from "react-icons/bs";
 
 export default function StageLink(props) {
 
@@ -26,17 +26,11 @@ export default function StageLink(props) {
                 <button onClick={goStage} id="buttonStage" disabled={props.status}>
                     <div className="leftStageLink">
 
-                        {props.status === true && (
-                            <GiPadlock size={80} color="var(--block)" />
-                        )}
-
-                        {props.status === false && (
-                            <GiPadlockOpen size={80} color="var(--green)" />
-                        )}
+                        <BsGearFill size={80} color="var(--black)" />
 
                         <h1>{props.name}</h1>
                     </div>
-                    <h1>{props.score} xp</h1>
+                    {/* <h1>{props.score} 5555555</h1> */}
                 </button>
             </div>
         </div>

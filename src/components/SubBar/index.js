@@ -18,9 +18,9 @@ export default function SubBar(props) {
             <div className="subBarLeft">
                 <h1>{props.name}</h1>
             </div>
-            <div className="subBarRight">
+            {/* <div className="subBarRight">
                 <h1>{props.score} xp</h1>
-            </div>
+            </div> */}
         </div>
     )
 }
