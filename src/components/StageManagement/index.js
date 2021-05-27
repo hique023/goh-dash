@@ -1,6 +1,7 @@
 // Global
 import React, { useState } from 'react'
 import TopBarPhase from '../TopBarPhase'
+import SubBar from '../SubBar'
 
 // Assets
 import './styles.css'
@@ -9,6 +10,7 @@ export default function StageManagement() {
 
     const color = localStorage.getItem('color')
     const nameUser = localStorage.getItem('nameUser')
+    const phaseName = localStorage.getItem('phaseName')
 
     const [phase1Stage1, setPhase1Stage1] = useState()
     const [phase1Stage2, setPhase1Stage2] = useState()
@@ -33,6 +35,8 @@ export default function StageManagement() {
     return (
         <div className="containerStageManagement">
             <TopBarPhase name={`Olá, ${nameUser}`} color={color} />
+
+            <SubBar name={phaseName} color={color} />
 
             <div className="contentStageManagement">
                 <div className="phase">
