@@ -1,9 +1,39 @@
 .containerStageManagement {
   /* display: flex; */
-  height: 100vh;
+  height: 100%;
   width: 1280px;
   margin: 0 auto;
   padding: 20px;
   justify-content: center;
   background-color: var(--background);
+}
+
+.containerStageManagement .contentStageManagement {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.containerStageManagement .contentStageManagement .phase {
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.containerStageManagement .contentStageManagement .phase .stageManagement {
+  display: flex;
+  margin-top: 15px;
+}
+
+.containerStageManagement
+  .contentStageManagement
+  .phase
+  .stageManagement
+  select {
+  border-radius: 10px;
+  margin-left: 15px;
 }
