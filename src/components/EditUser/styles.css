@@ -12,5 +12,69 @@
   border-radius: 10px;
   padding: 10px;
   margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font: 100 12px "Roboto", sans-serif;
+}
+
+.containerEditUser .contentEditUser .editUser {
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.containerEditUser .contentEditUser .editUser h1 {
   display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.containerEditUser .contentEditUser .editUser .phase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.containerEditUser .contentEditUser .editUser .slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerEditUser .contentEditUser .editUser .slot h1 {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.containerEditUser .contentEditUser .editUser .slot select {
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.containerEditUser .contentEditUser .editUser .slot input {
+  width: 70%;
+  height: 50px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 10px;
+  padding: 0 24px;
+  margin-top: 8px;
+}
+
+.containerEditUser .contentEditUser .editUser .phase .stage {
+  border: 1px solid var(--black);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.containerEditUser .contentEditUser .editUser .phase .stage input {
+  width: 30%;
+  height: 35px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 10px;
+  padding: 0 5px;
+  margin-top: 8px;
 }
