@@ -27,7 +27,7 @@ export default function Users() {
         });
 
         count.sort(function (a, b) {
-          if (a.user > b.user) {
+          if (a.firstName < b.firstName) {
             return -1;
           } else {
             return true;
