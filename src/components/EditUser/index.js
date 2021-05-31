@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Assets
-import 'styles.css'
+import './styles.css'
 
 export default function EditUser() {
     return (
