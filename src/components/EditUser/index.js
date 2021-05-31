@@ -1,13 +1,24 @@
 // Global
-import React from 'react'
+import React from "react";
+import TopBarPhase from "../TopBarPhase";
+import SubBar from "../SubBar";
 
 // Assets
-import './styles.css'
+import "./styles.css";
 
 export default function EditUser() {
-    return (
-        <div className="containerEditUser">
-            <h1>Edit User</h1>
-        </div>
-    )
+  const color = localStorage.getItem("color");
+  const nameUser = localStorage.getItem("nameUser");
+
+  return (
+    <div className="containerEditUser">
+      <TopBarPhase name={`Olá, ${nameUser}`} color={color} />
+
+      <SubBar name="Edição de Usuário" color={color} />
+
+      <div className="contentEditUser">
+        <h1>Edit User</h1>
+      </div>
+    </div>
+  );
 }

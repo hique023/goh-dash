@@ -1,0 +1,16 @@
+.containerEditUser {
+  height: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+.containerEditUser .contentEditUser {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+  display: flex;
+}
