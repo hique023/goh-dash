@@ -1,7 +1,8 @@
 // Global
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TopBarPhase from '../TopBarPhase'
 import SubBar from '../SubBar'
+import firebase from '../../firebaseConfig'
 
 // Assets
 import './styles.css'
@@ -11,6 +12,10 @@ export default function StageManagement() {
     const color = localStorage.getItem('color')
     const nameUser = localStorage.getItem('nameUser')
     const phaseName = localStorage.getItem('phaseName')
+    const db = firebase.firestore();
+
+    const [data, setData] = useState()
+    // const [score, setScore] = useState({ data: [] })
 
     const [phase1Stage1, setPhase1Stage1] = useState()
     const [phase1Stage2, setPhase1Stage2] = useState()
@@ -31,6 +36,33 @@ export default function StageManagement() {
     const [phase4Stage2, setPhase4Stage2] = useState()
     const [phase4Stage3, setPhase4Stage3] = useState()
     const [phase4Stage4, setPhase4Stage4] = useState()
+
+    function getStatusStage() {
+
+        var docRef = db.collection("status").doc('fase1');
+
+        docRef.get().then((doc) => {
+            if (doc.exists) {
+                const data = doc.data()
+                setData(data)
+
+                console.log('====================================');
+                console.log(data);
+                console.log('====================================');
+
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch((error) => {
+            console.log("Error getting document:", error);
+        });
+
+    }
+
+    useEffect(() => {
+        getStatusStage()
+    }, [])
 
     return (
         <div className="containerStageManagement">
