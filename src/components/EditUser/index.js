@@ -428,6 +428,125 @@ export default function EditUser() {
       });
   }
 
+  function updateScore() {
+    db.collection("score")
+      .doc(uid)
+      .set(
+        {
+          fase1: {
+            etapa1: {
+              qualidade: qualidadeFase1Etapa1,
+              treinamento: treinamentoFase1Etapa1,
+              desafio: desafioFase1Etapa1,
+              quiz: quizFase1Etapa1,
+            },
+            etapa2: {
+              qualidade: qualidadeFase1Etapa2,
+              treinamento: treinamentoFase1Etapa2,
+              desafio: desafioFase1Etapa2,
+              quiz: quizFase1Etapa2,
+            },
+            etapa3: {
+              qualidade: qualidadeFase1Etapa3,
+              treinamento: treinamentoFase1Etapa3,
+              desafio: desafioFase1Etapa3,
+              quiz: quizFase1Etapa3,
+            },
+            etapa4: {
+              qualidade: qualidadeFase1Etapa4,
+              treinamento: treinamentoFase1Etapa4,
+              desafio: desafioFase1Etapa4,
+              quiz: quizFase1Etapa4,
+            },
+          },
+          fase2: {
+            etapa1: {
+              qualidade: qualidadeFase2Etapa1,
+              treinamento: treinamentoFase2Etapa1,
+              desafio: desafioFase2Etapa1,
+              quiz: quizFase2Etapa1,
+            },
+            etapa2: {
+              qualidade: qualidadeFase2Etapa2,
+              treinamento: treinamentoFase2Etapa2,
+              desafio: desafioFase2Etapa2,
+              quiz: quizFase2Etapa2,
+            },
+            etapa3: {
+              qualidade: qualidadeFase2Etapa3,
+              treinamento: treinamentoFase2Etapa3,
+              desafio: desafioFase2Etapa3,
+              quiz: quizFase2Etapa3,
+            },
+            etapa4: {
+              qualidade: qualidadeFase2Etapa4,
+              treinamento: treinamentoFase2Etapa4,
+              desafio: desafioFase2Etapa4,
+              quiz: quizFase2Etapa4,
+            },
+          },
+          fase3: {
+            etapa1: {
+              qualidade: qualidadeFase3Etapa1,
+              treinamento: treinamentoFase3Etapa1,
+              desafio: desafioFase3Etapa1,
+              quiz: quizFase3Etapa1,
+            },
+            etapa2: {
+              qualidade: qualidadeFase3Etapa2,
+              treinamento: treinamentoFase3Etapa2,
+              desafio: desafioFase3Etapa2,
+              quiz: quizFase3Etapa2,
+            },
+            etapa3: {
+              qualidade: qualidadeFase3Etapa3,
+              treinamento: treinamentoFase3Etapa3,
+              desafio: desafioFase3Etapa3,
+              quiz: quizFase3Etapa3,
+            },
+            etapa4: {
+              qualidade: qualidadeFase3Etapa4,
+              treinamento: treinamentoFase3Etapa4,
+              desafio: desafioFase3Etapa4,
+              quiz: quizFase3Etapa4,
+            },
+          },
+          fase4: {
+            etapa1: {
+              qualidade: qualidadeFase4Etapa1,
+              treinamento: treinamentoFase4Etapa1,
+              desafio: desafioFase4Etapa1,
+              quiz: quizFase4Etapa1,
+            },
+            etapa2: {
+              qualidade: qualidadeFase4Etapa2,
+              treinamento: treinamentoFase4Etapa2,
+              desafio: desafioFase4Etapa2,
+              quiz: quizFase4Etapa2,
+            },
+            etapa3: {
+              qualidade: qualidadeFase4Etapa3,
+              treinamento: treinamentoFase4Etapa3,
+              desafio: desafioFase4Etapa3,
+              quiz: quizFase4Etapa3,
+            },
+            etapa4: {
+              qualidade: qualidadeFase4Etapa4,
+              treinamento: treinamentoFase4Etapa4,
+              desafio: desafioFase4Etapa4,
+              quiz: quizFase4Etapa4,
+            },
+          },
+        },
+        { merge: true }
+      )
+      .then((docRef) => {})
+      .catch((error) => {
+        // console.error("Error adding document: ", error);
+        console.log("Erro ao cadastrar score do usuário!");
+      });
+  }
+
   useEffect(() => {
     getPersonalData();
     getQuizFinish();
@@ -1478,7 +1597,9 @@ export default function EditUser() {
               </div>
             </div>
           </div>
-          <button className="button">Atualizar Dados</button>
+          <button className="button" onClick={updateScore}>
+            Atualizar Dados
+          </button>
         </div>
       </div>
     </div>
