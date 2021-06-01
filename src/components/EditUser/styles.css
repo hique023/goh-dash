@@ -18,6 +18,14 @@
   font: 100 12px "Roboto", sans-serif;
 }
 
+.containerEditUser .contentEditUser .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  color: var(--white);
+}
+
 .containerEditUser .contentEditUser .editUser {
   background-color: var(--background);
   padding: 10px;

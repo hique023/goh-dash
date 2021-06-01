@@ -19,6 +19,10 @@ export default function EditUser() {
   const [group, setGroup] = useState("");
   const [name, setName] = useState("");
   const [score, setScore] = useState("");
+  const [uidDb, setUidDb] = useState("");
+
+  const [trueVar] = useState(Boolean("true"));
+  const [falseVar] = useState(false);
 
   const [quizPhase1Stage1, setQuizPhase1Stage1] = useState("");
   const [quizPhase1Stage2, setQuizPhase1Stage2] = useState("");
@@ -180,6 +184,7 @@ export default function EditUser() {
           setGroup(data.group);
           setName(data.name);
           setScore(data.score);
+          setUidDb(data.uid);
         } else {
           // doc.data() will be undefined in this case
           console.log("No such document!");
@@ -360,6 +365,69 @@ export default function EditUser() {
       });
   }
 
+  function updatePersonalData() {
+    db.collection("users")
+      .doc(uid)
+      .set(
+        {
+          avatar: avatar,
+          email: email,
+          firstName: firstName,
+          group: group,
+          name: name,
+        },
+        { merge: true }
+      )
+      .then((docRef) => {
+        alert(`Dados do usuário atualizados com sucesso!`);
+      })
+      .catch((error) => {
+        // console.error("Error adding document: ", error);
+        alert("Erro ao cadastrar dados do usuário!");
+      });
+  }
+
+  function updateQuizFinish() {
+    db.collection("quizFinish")
+      .doc(uid)
+      .set(
+        {
+          fase1: {
+            etapa1: quizPhase1Stage1,
+            etapa2: quizPhase1Stage2,
+            etapa3: quizPhase1Stage3,
+            etapa4: quizPhase1Stage4,
+          },
+          fase2: {
+            etapa1: quizPhase2Stage1,
+            etapa2: quizPhase2Stage2,
+            etapa3: quizPhase2Stage3,
+            etapa4: quizPhase2Stage4,
+          },
+          fase3: {
+            etapa1: quizPhase3Stage1,
+            etapa2: quizPhase3Stage2,
+            etapa3: quizPhase3Stage3,
+            etapa4: quizPhase3Stage4,
+          },
+          fase4: {
+            etapa1: quizPhase4Stage1,
+            etapa2: quizPhase4Stage2,
+            etapa3: quizPhase4Stage3,
+            etapa4: quizPhase4Stage4,
+          },
+        },
+        { merge: true }
+      )
+      .then((docRef) => {
+        alert(`Dados do usuário atualizados com sucesso!`);
+      })
+      .catch((error) => {
+        // console.error("Error adding document: ", error);
+        alert("Erro ao cadastrar dados do usuário!");
+      });
+  }
+
   useEffect(() => {
     getPersonalData();
     getQuizFinish();
@@ -434,6 +502,14 @@ export default function EditUser() {
             <h1>Score</h1>
             <h2>{score} xp</h2>
           </div>
+          <div className="slot">
+            <h1>UID</h1>
+            <h2>{uidDb}</h2>
+          </div>
+
+          <button className="button" onClick={updatePersonalData}>
+            Atualizar Dados
+          </button>
 
           <hr />
 
@@ -448,7 +524,9 @@ export default function EditUser() {
                     name="phase1Stage1"
                     value={quizPhase1Stage1}
                     onChange={(e) => {
-                      setQuizPhase1Stage1(e.target.value);
+                      setQuizPhase1Stage1(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -461,7 +539,9 @@ export default function EditUser() {
                     name="phase1Stage2"
                     value={quizPhase1Stage2}
                     onChange={(e) => {
-                      setQuizPhase1Stage2(e.target.value);
+                      setQuizPhase1Stage2(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -474,7 +554,9 @@ export default function EditUser() {
                     name="phase1Stage3"
                     value={quizPhase1Stage3}
                     onChange={(e) => {
-                      setQuizPhase1Stage3(e.target.value);
+                      setQuizPhase1Stage3(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -487,7 +569,9 @@ export default function EditUser() {
                     name="phase1Stage4"
                     value={quizPhase1Stage4}
                     onChange={(e) => {
-                      setQuizPhase1Stage4(e.target.value);
+                      setQuizPhase1Stage4(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -503,7 +587,9 @@ export default function EditUser() {
                     name="phase2Stage1"
                     value={quizPhase2Stage1}
                     onChange={(e) => {
-                      setQuizPhase2Stage1(e.target.value);
+                      setQuizPhase2Stage1(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -516,7 +602,9 @@ export default function EditUser() {
                     name="phase2Stage2"
                     value={quizPhase2Stage2}
                     onChange={(e) => {
-                      setQuizPhase2Stage2(e.target.value);
+                      setQuizPhase2Stage2(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -529,7 +617,9 @@ export default function EditUser() {
                     name="phase2Stage3"
                     value={quizPhase2Stage3}
                     onChange={(e) => {
-                      setQuizPhase2Stage3(e.target.value);
+                      setQuizPhase2Stage3(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -542,7 +632,9 @@ export default function EditUser() {
                     name="phase2Stage4"
                     value={quizPhase2Stage4}
                     onChange={(e) => {
-                      setQuizPhase2Stage4(e.target.value);
+                      setQuizPhase2Stage4(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -558,7 +650,9 @@ export default function EditUser() {
                     name="phase3Stage1"
                     value={quizPhase3Stage1}
                     onChange={(e) => {
-                      setQuizPhase3Stage1(e.target.value);
+                      setQuizPhase3Stage1(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -571,7 +665,9 @@ export default function EditUser() {
                     name="phase3Stage2"
                     value={quizPhase3Stage2}
                     onChange={(e) => {
-                      setQuizPhase3Stage2(e.target.value);
+                      setQuizPhase3Stage2(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -584,7 +680,9 @@ export default function EditUser() {
                     name="phase3Stage3"
                     value={quizPhase3Stage3}
                     onChange={(e) => {
-                      setQuizPhase3Stage3(e.target.value);
+                      setQuizPhase3Stage3(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -597,7 +695,9 @@ export default function EditUser() {
                     name="phase3Stage4"
                     value={quizPhase3Stage4}
                     onChange={(e) => {
-                      setQuizPhase3Stage4(e.target.value);
+                      setQuizPhase3Stage4(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -613,7 +713,9 @@ export default function EditUser() {
                     name="phase4Stage1"
                     value={quizPhase4Stage1}
                     onChange={(e) => {
-                      setQuizPhase4Stage1(e.target.value);
+                      setQuizPhase4Stage1(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -626,7 +728,9 @@ export default function EditUser() {
                     name="phase4Stage2"
                     value={quizPhase4Stage2}
                     onChange={(e) => {
-                      setQuizPhase4Stage2(e.target.value);
+                      setQuizPhase4Stage2(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -639,7 +743,9 @@ export default function EditUser() {
                     name="phase4Stage3"
                     value={quizPhase4Stage3}
                     onChange={(e) => {
-                      setQuizPhase4Stage3(e.target.value);
+                      setQuizPhase4Stage3(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -652,7 +758,9 @@ export default function EditUser() {
                     name="phase4Stage4"
                     value={quizPhase4Stage4}
                     onChange={(e) => {
-                      setQuizPhase4Stage4(e.target.value);
+                      setQuizPhase4Stage4(
+                        e.target.value === "true" ? true : false
+                      );
                     }}
                   >
                     <option value="true">Bloqueado</option>
@@ -661,6 +769,10 @@ export default function EditUser() {
                 </div>
               </div>
             </div>
+            <button className="button" onClick={updateQuizFinish}>
+              Atualizar Dados
+            </button>
+            <hr />
           </div>
         </div>
 
@@ -1366,6 +1478,7 @@ export default function EditUser() {
               </div>
             </div>
           </div>
+          <button className="button">Atualizar Dados</button>
         </div>
       </div>
     </div>
