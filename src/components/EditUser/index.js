@@ -907,7 +907,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase1Etapa1}
                   onChange={(e) => {
-                    setDesafioFase1Etapa1(e.target.value);
+                    setDesafioFase1Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -917,7 +917,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase1Etapa1}
                   onChange={(e) => {
-                    setQualidadeFase1Etapa1(e.target.value);
+                    setQualidadeFase1Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -927,7 +927,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase1Etapa1}
                   onChange={(e) => {
-                    setQuizFase1Etapa1(e.target.value);
+                    setQuizFase1Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -937,7 +937,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase1Etapa1}
                   onChange={(e) => {
-                    setTreinamentoFase1Etapa1(e.target.value);
+                    setTreinamentoFase1Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -950,7 +950,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase1Etapa2}
                   onChange={(e) => {
-                    setDesafioFase1Etapa2(e.target.value);
+                    setDesafioFase1Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -960,7 +960,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase1Etapa2}
                   onChange={(e) => {
-                    setQualidadeFase1Etapa2(e.target.value);
+                    setQualidadeFase1Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -970,7 +970,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase1Etapa2}
                   onChange={(e) => {
-                    setQuizFase1Etapa2(e.target.value);
+                    setQuizFase1Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -980,7 +980,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase1Etapa2}
                   onChange={(e) => {
-                    setTreinamentoFase1Etapa2(e.target.value);
+                    setTreinamentoFase1Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -993,7 +993,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase1Etapa3}
                   onChange={(e) => {
-                    setDesafioFase1Etapa3(e.target.value);
+                    setDesafioFase1Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1003,7 +1003,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase1Etapa3}
                   onChange={(e) => {
-                    setQualidadeFase1Etapa3(e.target.value);
+                    setQualidadeFase1Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1013,7 +1013,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase1Etapa3}
                   onChange={(e) => {
-                    setQuizFase1Etapa3(e.target.value);
+                    setQuizFase1Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1023,7 +1023,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase1Etapa3}
                   onChange={(e) => {
-                    setTreinamentoFase1Etapa3(e.target.value);
+                    setTreinamentoFase1Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1036,7 +1036,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase1Etapa4}
                   onChange={(e) => {
-                    setDesafioFase1Etapa4(e.target.value);
+                    setDesafioFase1Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1046,7 +1046,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase1Etapa4}
                   onChange={(e) => {
-                    setQualidadeFase1Etapa4(e.target.value);
+                    setQualidadeFase1Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1056,7 +1056,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase1Etapa4}
                   onChange={(e) => {
-                    setQuizFase1Etapa4(e.target.value);
+                    setQuizFase1Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1066,7 +1066,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase1Etapa4}
                   onChange={(e) => {
-                    setTreinamentoFase1Etapa4(e.target.value);
+                    setTreinamentoFase1Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1082,7 +1082,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase2Etapa1}
                   onChange={(e) => {
-                    setDesafioFase2Etapa1(e.target.value);
+                    setDesafioFase2Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1092,7 +1092,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase2Etapa1}
                   onChange={(e) => {
-                    setQualidadeFase2Etapa1(e.target.value);
+                    setQualidadeFase2Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1102,7 +1102,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase2Etapa1}
                   onChange={(e) => {
-                    setQuizFase2Etapa1(e.target.value);
+                    setQuizFase2Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1112,7 +1112,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase2Etapa1}
                   onChange={(e) => {
-                    setTreinamentoFase2Etapa1(e.target.value);
+                    setTreinamentoFase2Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1125,7 +1125,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase2Etapa2}
                   onChange={(e) => {
-                    setDesafioFase2Etapa2(e.target.value);
+                    setDesafioFase2Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1135,7 +1135,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase2Etapa2}
                   onChange={(e) => {
-                    setQualidadeFase2Etapa2(e.target.value);
+                    setQualidadeFase2Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1145,7 +1145,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase2Etapa2}
                   onChange={(e) => {
-                    setQuizFase2Etapa2(e.target.value);
+                    setQuizFase2Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1155,7 +1155,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase2Etapa2}
                   onChange={(e) => {
-                    setTreinamentoFase2Etapa2(e.target.value);
+                    setTreinamentoFase2Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1168,7 +1168,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase2Etapa3}
                   onChange={(e) => {
-                    setDesafioFase2Etapa3(e.target.value);
+                    setDesafioFase2Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1178,7 +1178,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase2Etapa3}
                   onChange={(e) => {
-                    setQualidadeFase2Etapa3(e.target.value);
+                    setQualidadeFase2Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1188,7 +1188,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase2Etapa3}
                   onChange={(e) => {
-                    setQuizFase2Etapa3(e.target.value);
+                    setQuizFase2Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1198,7 +1198,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase2Etapa3}
                   onChange={(e) => {
-                    setTreinamentoFase2Etapa3(e.target.value);
+                    setTreinamentoFase2Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1211,7 +1211,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase2Etapa4}
                   onChange={(e) => {
-                    setDesafioFase2Etapa4(e.target.value);
+                    setDesafioFase2Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1221,7 +1221,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase2Etapa4}
                   onChange={(e) => {
-                    setQualidadeFase2Etapa4(e.target.value);
+                    setQualidadeFase2Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1231,7 +1231,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase2Etapa4}
                   onChange={(e) => {
-                    setQuizFase2Etapa4(e.target.value);
+                    setQuizFase2Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1241,7 +1241,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase2Etapa4}
                   onChange={(e) => {
-                    setTreinamentoFase2Etapa4(e.target.value);
+                    setTreinamentoFase2Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1257,7 +1257,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase3Etapa1}
                   onChange={(e) => {
-                    setDesafioFase3Etapa1(e.target.value);
+                    setDesafioFase3Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1267,7 +1267,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase3Etapa1}
                   onChange={(e) => {
-                    setQualidadeFase3Etapa1(e.target.value);
+                    setQualidadeFase3Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1277,7 +1277,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase3Etapa1}
                   onChange={(e) => {
-                    setQuizFase3Etapa1(e.target.value);
+                    setQuizFase3Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1287,7 +1287,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase3Etapa1}
                   onChange={(e) => {
-                    setTreinamentoFase3Etapa1(e.target.value);
+                    setTreinamentoFase3Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1300,7 +1300,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase3Etapa2}
                   onChange={(e) => {
-                    setDesafioFase3Etapa2(e.target.value);
+                    setDesafioFase3Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1310,7 +1310,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase3Etapa2}
                   onChange={(e) => {
-                    setQualidadeFase3Etapa2(e.target.value);
+                    setQualidadeFase3Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1320,7 +1320,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase3Etapa2}
                   onChange={(e) => {
-                    setQuizFase3Etapa2(e.target.value);
+                    setQuizFase3Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1330,7 +1330,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase3Etapa2}
                   onChange={(e) => {
-                    setTreinamentoFase3Etapa2(e.target.value);
+                    setTreinamentoFase3Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1343,7 +1343,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase3Etapa3}
                   onChange={(e) => {
-                    setDesafioFase3Etapa3(e.target.value);
+                    setDesafioFase3Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1353,7 +1353,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase3Etapa3}
                   onChange={(e) => {
-                    setQualidadeFase3Etapa3(e.target.value);
+                    setQualidadeFase3Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1363,7 +1363,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase3Etapa3}
                   onChange={(e) => {
-                    setQuizFase3Etapa3(e.target.value);
+                    setQuizFase3Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1373,7 +1373,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase3Etapa3}
                   onChange={(e) => {
-                    setTreinamentoFase3Etapa3(e.target.value);
+                    setTreinamentoFase3Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1386,7 +1386,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase3Etapa4}
                   onChange={(e) => {
-                    setDesafioFase3Etapa4(e.target.value);
+                    setDesafioFase3Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1396,7 +1396,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase3Etapa4}
                   onChange={(e) => {
-                    setQualidadeFase3Etapa4(e.target.value);
+                    setQualidadeFase3Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1406,7 +1406,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase3Etapa4}
                   onChange={(e) => {
-                    setQuizFase3Etapa4(e.target.value);
+                    setQuizFase3Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1416,7 +1416,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase3Etapa4}
                   onChange={(e) => {
-                    setTreinamentoFase3Etapa4(e.target.value);
+                    setTreinamentoFase3Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1432,7 +1432,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase4Etapa1}
                   onChange={(e) => {
-                    setDesafioFase4Etapa1(e.target.value);
+                    setDesafioFase4Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1442,7 +1442,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase4Etapa1}
                   onChange={(e) => {
-                    setQualidadeFase4Etapa1(e.target.value);
+                    setQualidadeFase4Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1452,7 +1452,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase4Etapa1}
                   onChange={(e) => {
-                    setQuizFase4Etapa1(e.target.value);
+                    setQuizFase4Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1462,7 +1462,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase4Etapa1}
                   onChange={(e) => {
-                    setTreinamentoFase4Etapa1(e.target.value);
+                    setTreinamentoFase4Etapa1(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1475,7 +1475,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase4Etapa2}
                   onChange={(e) => {
-                    setDesafioFase4Etapa2(e.target.value);
+                    setDesafioFase4Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1485,7 +1485,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase4Etapa2}
                   onChange={(e) => {
-                    setQualidadeFase4Etapa2(e.target.value);
+                    setQualidadeFase4Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1495,7 +1495,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase4Etapa2}
                   onChange={(e) => {
-                    setQuizFase4Etapa2(e.target.value);
+                    setQuizFase4Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1505,7 +1505,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase4Etapa2}
                   onChange={(e) => {
-                    setTreinamentoFase4Etapa2(e.target.value);
+                    setTreinamentoFase4Etapa2(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1518,7 +1518,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase4Etapa3}
                   onChange={(e) => {
-                    setDesafioFase4Etapa3(e.target.value);
+                    setDesafioFase4Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1528,7 +1528,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase4Etapa3}
                   onChange={(e) => {
-                    setQualidadeFase4Etapa3(e.target.value);
+                    setQualidadeFase4Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1538,7 +1538,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase4Etapa3}
                   onChange={(e) => {
-                    setQuizFase4Etapa3(e.target.value);
+                    setQuizFase4Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1548,7 +1548,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase4Etapa3}
                   onChange={(e) => {
-                    setTreinamentoFase4Etapa3(e.target.value);
+                    setTreinamentoFase4Etapa3(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1561,7 +1561,7 @@ export default function EditUser() {
                   type="text"
                   value={desafioFase4Etapa4}
                   onChange={(e) => {
-                    setDesafioFase4Etapa4(e.target.value);
+                    setDesafioFase4Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1571,7 +1571,7 @@ export default function EditUser() {
                   type="text"
                   value={qualidadeFase4Etapa4}
                   onChange={(e) => {
-                    setQualidadeFase4Etapa4(e.target.value);
+                    setQualidadeFase4Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1581,7 +1581,7 @@ export default function EditUser() {
                   type="text"
                   value={quizFase4Etapa4}
                   onChange={(e) => {
-                    setQuizFase4Etapa4(e.target.value);
+                    setQuizFase4Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
@@ -1591,7 +1591,7 @@ export default function EditUser() {
                   type="text"
                   value={treinamentoFase4Etapa4}
                   onChange={(e) => {
-                    setTreinamentoFase4Etapa4(e.target.value);
+                    setTreinamentoFase4Etapa4(parseInt(e.target.value, 10));
                   }}
                 />
               </div>
