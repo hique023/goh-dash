@@ -50,7 +50,8 @@
 .containerEditUser .contentEditUser .editUser .slot select {
   height: 30px;
   border-radius: 10px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  width: 70%;
 }
 
 .containerEditUser .contentEditUser .editUser .slot input {
