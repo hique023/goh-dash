@@ -8,11 +8,7 @@
   background-color: var(--background);
 }
 
-.containerStage .button {
-  color: var(--white);
-}
-
-.containerStage .listStage {
+.containerStage .addQuestion {
   background-color: var(--white);
   margin: 20px 0px;
   width: 100%;
@@ -24,4 +20,22 @@
   padding: 20px;
   /* align-items: center; */
   /* justify-content: space-between; */
+}
+
+.containerStage .addQuestion .slotQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerStage .addQuestion .slotQuestion h2 {
+  width: 20%;
+}
+
+.containerStage .addQuestion .slotQuestion input {
+  border-radius: 10px;
+}
+
+.containerStage .addQuestion .slotQuestion select {
+  border-radius: 10px;
 }
