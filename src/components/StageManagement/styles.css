@@ -8,6 +8,11 @@
   background-color: var(--background);
 }
 
+.containerStageManagement .button {
+  color: var(--white);
+  margin: 0px auto 15px;
+}
+
 .containerStageManagement .contentStageManagement {
   background-color: var(--white);
   border-radius: 10px;
