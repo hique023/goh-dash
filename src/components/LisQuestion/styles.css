@@ -1,0 +1,51 @@
+.containerListQuestion {
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  /* height: 120px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerListQuestion .contentListQuestion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerListQuestion .contentListQuestion hr {
+  width: 91%;
+}
+
+.containerListQuestion .contentListQuestion .slotQuestion {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerListQuestion .contentListQuestion .slotQuestion {
+  margin-top: 5px;
+}
+
+.containerListQuestion .contentListQuestion .slotQuestion h1 {
+  font: 100 25px "Roboto", sans-serif;
+}
+
+.containerListQuestion .contentListQuestion .slotQuestion h2 {
+  margin-left: 10px;
+  font: 100 18px "Roboto", sans-serif;
+}
+
+.containerListQuestion .editButton {
+  position: relative;
+  right: 5px;
+  top: -110px;
+  background: transparent;
+  border: 0;
+  font-size: 0px;
+}

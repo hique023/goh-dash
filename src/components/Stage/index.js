@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TopBarPhase from "../TopBarPhase";
 import SubBar from "../SubBar";
+import ListQuestion from "../LisQuestion";
 
 // Assets
 import "./styles.css";
@@ -26,11 +27,11 @@ export default function Stage(props) {
       </Link>
 
       <div className="listStage">
-        <h1>List questions</h1>
-        <h1>List questions</h1>
-        <h1>List questions</h1>
-        <h1>List questions</h1>
-        <h1>List questions</h1>
+        <ListQuestion />
+        <ListQuestion />
+        <ListQuestion />
+        <ListQuestion />
+        <ListQuestion />
       </div>
     </div>
   );
