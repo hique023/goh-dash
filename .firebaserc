@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "goh-global-41575"
+  },
+  "targets": {
+    "goh-global-41575": {
+      "hosting": {
+        "gohdash": [
+          "https://gohdash.web.app/"
+        ]
+      }
+    }
+  }
+}
