@@ -15,28 +15,39 @@ export default function Stage(props) {
   const phaseId = localStorage.getItem("phaseId");
   const stageId = localStorage.getItem("stageId");
   const stageName = localStorage.getItem("subBarName");
-  const userUid = localStorage.getItem("userUid");
 
   const db = firebase.firestore();
 
-  const [questions, setQuestions] = useState();
+  const [question1, setQuestion1] = useState();
+  const [question2, setQuestion2] = useState();
+  const [question3, setQuestion3] = useState();
+  const [question4, setQuestion4] = useState();
+  const [question5, setQuestion5] = useState();
+  const [question6, setQuestion6] = useState();
+  const [question7, setQuestion7] = useState();
+  const [question8, setQuestion8] = useState();
+  const [question9, setQuestion9] = useState();
+  const [question10, setQuestion10] = useState();
 
   function getQuestions() {
-    const count = [];
-
     var docRef = db.collection(phaseId).doc(stageId);
 
     docRef
       .get()
       .then((doc) => {
         if (doc.exists) {
-          const dataDb = doc.data();
-          // setData(data);
+          const data = doc.data();
 
-          console.log("====================================");
-          console.log(dataDb);
-          setQuestions(dataDb);
-          console.log("====================================");
+          setQuestion1(data[1][0]);
+          setQuestion2(data[2][0]);
+          setQuestion3(data[3][0]);
+          setQuestion4(data[4][0]);
+          setQuestion5(data[5][0]);
+          setQuestion6(data[6][0]);
+          setQuestion7(data[7][0]);
+          setQuestion8(data[8][0]);
+          setQuestion9(data[9][0]);
+          setQuestion10(data[10][0]);
         } else {
           // doc.data() will be undefined in this case
           console.log("No such document!");
@@ -58,12 +69,50 @@ export default function Stage(props) {
       <SubBar name={stageName} color={color} />
 
       <Link to="/editquestion">
-        <button className="button">Editar Questão</button>
+        <button className="button">Editar / Adicionar Questão</button>
       </Link>
 
       <div className="listStage">
-        <ListQuestion />
-        <ListQuestion />
+        <div className="slotQuestion">
+          <h1>1.</h1>
+          <h2>{question1}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>2.</h1>
+          <h2>{question2}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>3.</h1>
+          <h2>{question3}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>4.</h1>
+          <h2>{question4}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>5.</h1>
+          <h2>{question5}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>6.</h1>
+          <h2>{question6}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>7.</h1>
+          <h2>{question7}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>8.</h1>
+          <h2>{question8}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>9.</h1>
+          <h2>{question9}</h2>
+        </div>
+        <div className="slotQuestion">
+          <h1>10.</h1>
+          <h2>{question10}</h2>
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import Stage from "./components/Stage";
 import Users from "./components/Users";
 import StageManagement from "./components/StageManagement";
 import EditUser from "./components/EditUser";
-import AddQuestion from "./components/AddQuestion";
 import EditQuestion from "./components/EditQuestion";
 
 export default function Routes() {
@@ -21,7 +20,6 @@ export default function Routes() {
         <Route exact path="/users" component={Users} />
         <Route exact path="/stagemanagement" component={StageManagement} />
         <Route exact path="/edituser" component={EditUser} />
-        <Route exact path="/addquestion" component={AddQuestion} />
         <Route exact path="/editquestion" component={EditQuestion} />
       </Switch>
     </BrowserRouter>
