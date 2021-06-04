@@ -28,12 +28,285 @@ export default function EditQuestion(props) {
 
   function getData(e) {
     e.preventDefault();
-    alert("Submit");
+
+    var docRef = db.collection(phaseId).doc(stageId);
+
+    docRef
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          const data = doc.data();
+          // setData(data);
+
+          const pergunta = data[numberQuestion];
+          console.table(pergunta);
+          // console.log('-----------------------------');
+
+          setQuestion(pergunta[0]);
+          setAnswer1(pergunta[1]);
+          setAnswer2(pergunta[2]);
+          setAnswer3(pergunta[3]);
+          setAnswer4(pergunta[4]);
+          setCorrectAnswer(pergunta[5]);
+          setQuestionScore(pergunta[6]);
+        } else {
+          // doc.data() will be undefined in this case
+          console.log("No such document!");
+        }
+      })
+      .catch((error) => {
+        console.log("Error getting document:", error);
+      });
   }
 
   function updateQuestion(e) {
     e.preventDefault();
-    alert("Update");
+
+    if (numberQuestion <= 10) {
+      if (numberQuestion === 1) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              1: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 2) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              2: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 3) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              3: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 4) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              4: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 5) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              5: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 6) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              6: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 7) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              7: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 8) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              8: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 9) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              9: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      } else if (numberQuestion === 10) {
+        db.collection(phaseId)
+          .doc(stageId)
+          .set(
+            {
+              10: [
+                question,
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                correctAnswer,
+                questionScore,
+              ],
+            },
+            { merge: true }
+          )
+          .then((docRef) => {
+            alert(`Questão atualizada com sucesso!`);
+          })
+          .catch((error) => {
+            // console.error("Error adding document: ", error);
+            alert("Erro ao atualizar questão!");
+          });
+      }
+    } else {
+      alert("Número máximo de questões atingido!");
+    }
   }
 
   useEffect(() => {}, []);
@@ -42,7 +315,7 @@ export default function EditQuestion(props) {
     <div className="containerStage">
       <TopBarPhase name={`Olá, ${nameUser}`} color={color} />
 
-      <SubBar name="Edição de Pergunta" color={color} />
+      <SubBar name="Edição / Adição de Pergunta" color={color} />
 
       <div className="editQuestion">
         <form onSubmit={getData}>
@@ -52,7 +325,7 @@ export default function EditQuestion(props) {
               type="text"
               value={numberQuestion}
               onChange={(e) => {
-                setNumberQuestion(e.target.value);
+                setNumberQuestion(parseInt(e.target.value, 10));
               }}
             />
             <input
@@ -137,7 +410,11 @@ export default function EditQuestion(props) {
               <option value="6">6</option>
             </select>
           </div>
-          <input className="button" type="submit" value="Atualizar" />
+          <input
+            className="button"
+            type="submit"
+            value="Atualizar / Adicionar"
+          />
         </form>
       </div>
     </div>
