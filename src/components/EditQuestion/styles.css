@@ -1,0 +1,56 @@
+.containerStage {
+  /* display: flex; */
+  height: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+.containerStage .editQuestion {
+  background-color: var(--white);
+  margin: 20px 0px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.containerStage .editQuestion .searchQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerStage .editQuestion .searchQuestion .button {
+  margin: 0px 0px 0px 15px;
+  width: 35%;
+}
+
+.containerStage .editQuestion .searchQuestion input {
+  margin: 0px;
+  width: 40%;
+}
+
+.containerStage .editQuestion .slotQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerStage .editQuestion .slotQuestion h2 {
+  width: 20%;
+}
+
+.containerStage .editQuestion .slotQuestion input {
+  border-radius: 10px;
+}
+
+.containerStage .editQuestion .slotQuestion select {
+  border-radius: 10px;
+}

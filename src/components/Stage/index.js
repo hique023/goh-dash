@@ -57,8 +57,8 @@ export default function Stage(props) {
 
       <SubBar name={stageName} color={color} />
 
-      <Link to="/addquestion">
-        <button className="button">Adicionar Questão</button>
+      <Link to="/editquestion">
+        <button className="button">Editar Questão</button>
       </Link>
 
       <div className="listStage">

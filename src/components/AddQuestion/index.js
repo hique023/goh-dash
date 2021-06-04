@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import TopBarPhase from "../TopBarPhase";
 import SubBar from "../SubBar";
+import firebase from "../../firebaseConfig.js";
 
 // Assets
 import "./styles.css";
@@ -12,6 +13,9 @@ export default function Stage(props) {
   const phaseId = localStorage.getItem("phaseId");
   const stageId = localStorage.getItem("stageId");
   const stageName = localStorage.getItem("subBarName");
+  const [lengthData, setLengthData] = useState(0);
+
+  const db = firebase.firestore();
 
   const [question, setQuestion] = useState("");
   const [answer1, setAnswer1] = useState("");
@@ -21,10 +25,57 @@ export default function Stage(props) {
   const [correctAnswer, setCorrectAnswer] = useState("");
   const [questionScore, setQuestionScore] = useState(0);
 
+  function getData() {
+    var docRef = db.collection(phaseId).doc(stageId);
+
+    docRef
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          const data = doc.data();
+          // setData(data);
+
+          setLengthData(Object.keys(data).length + 1);
+        } else {
+          // doc.data() will be undefined in this case
+          console.log("No such document!");
+        }
+      })
+      .catch((error) => {
+        console.log("Error getting document:", error);
+      });
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     alert("Form enviado!");
+
+    db.collection(phaseId)
+      .doc(stageId)
+      .set(
+        {
+          lengthData: [
+            question,
+            answer1,
+            answer2,
+            answer3,
+            answer4,
+            correctAnswer,
+            questionScore,
+          ],
+        },
+        { merge: true }
+      )
+      .then((docRef) => {})
+      .catch((error) => {
+        // console.error("Error adding document: ", error);
+        alert("Erro ao cadastrar questão!");
+      });
   }
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="containerStage">
