@@ -174,9 +174,9 @@ export default function EditUser() {
           const data = doc.data();
           // setData(data);
 
-          console.log("====================================");
-          console.log(data);
-          console.log("====================================");
+          // console.log("====================================");
+          // console.log(data);
+          // console.log("====================================");
 
           setAvatar(data.avatar);
           setEmail(data.email);
@@ -205,9 +205,9 @@ export default function EditUser() {
           const data = doc.data();
           // setData(data);
 
-          console.log("====================================");
-          console.log(data);
-          console.log("====================================");
+          // console.log("====================================");
+          // console.log(data);
+          // console.log("====================================");
 
           setQuizPhase1Stage1(data.fase1.etapa1);
           setQuizPhase1Stage2(data.fase1.etapa2);
@@ -248,9 +248,9 @@ export default function EditUser() {
           const data = doc.data();
           // setData(data);
 
-          console.log("====================================");
-          console.log(data);
-          console.log("====================================");
+          // console.log("====================================");
+          // console.log(data);
+          // console.log("====================================");
 
           // Fase 1
 
@@ -540,7 +540,9 @@ export default function EditUser() {
         },
         { merge: true }
       )
-      .then((docRef) => {})
+      .then((docRef) => {
+        alert(`Dados do usuário atualizados com sucesso!`);
+      })
       .catch((error) => {
         // console.error("Error adding document: ", error);
         console.log("Erro ao cadastrar score do usuário!");

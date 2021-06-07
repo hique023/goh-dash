@@ -39,7 +39,7 @@ export default function EditQuestion(props) {
           // setData(data);
 
           const pergunta = data[numberQuestion];
-          console.table(pergunta);
+          // console.table(pergunta);
           // console.log('-----------------------------');
 
           setQuestion(pergunta[0]);

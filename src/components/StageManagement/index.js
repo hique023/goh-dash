@@ -161,11 +161,11 @@ export default function StageManagement() {
         { merge: true }
       )
       .then((docRef) => {
-        // alert(`Dados do usuário atualizados com sucesso!`);
+        // alert(`Dados atualizados com sucesso!`);
       })
       .catch((error) => {
         // console.error("Error adding document: ", error);
-        alert("Erro ao cadastrar dados do usuário!");
+        alert("Erro ao cadastrar dados!");
       });
   }
 
@@ -182,11 +182,11 @@ export default function StageManagement() {
         { merge: true }
       )
       .then((docRef) => {
-        // alert(`Dados do usuário atualizados com sucesso!`);
+        // alert(`Dados atualizados com sucesso!`);
       })
       .catch((error) => {
         // console.error("Error adding document: ", error);
-        alert("Erro ao cadastrar dados do usuário!");
+        alert("Erro ao cadastrar dados!");
       });
   }
 
@@ -203,11 +203,11 @@ export default function StageManagement() {
         { merge: true }
       )
       .then((docRef) => {
-        // alert(`Dados do usuário atualizados com sucesso!`);
+        // alert(`Dados atualizados com sucesso!`);
       })
       .catch((error) => {
         // console.error("Error adding document: ", error);
-        alert("Erro ao cadastrar dados do usuário!");
+        alert("Erro ao cadastrar dados!");
       });
   }
 
@@ -224,11 +224,11 @@ export default function StageManagement() {
         { merge: true }
       )
       .then((docRef) => {
-        // alert(`Dados do usuário atualizados com sucesso!`);
+        // alert(`Dados atualizados com sucesso!`);
       })
       .catch((error) => {
         // console.error("Error adding document: ", error);
-        alert("Erro ao cadastrar dados do usuário!");
+        alert("Erro ao cadastrar dados!");
       });
   }
 
@@ -237,6 +237,7 @@ export default function StageManagement() {
     updatePhase2();
     updatePhase3();
     updatePhase4();
+    alert(`Dados atualizados com sucesso!`);
   }
 
   useEffect(() => {
