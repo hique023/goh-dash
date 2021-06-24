@@ -164,6 +164,208 @@ export default function EditUser() {
   const [quizFase4Etapa4, setQuizFase4Etapa4] = useState(0);
   const [totalFase4Etapa4, setTotalFase4Etapa4] = useState(0);
 
+  // Answers
+
+  // Fase 1
+
+  // Etapa 1
+  const [answer1Fase1Etapa1, setAnswer1Fase1Etapa1] = useState("");
+  const [answer2Fase1Etapa1, setAnswer2Fase1Etapa1] = useState("");
+  const [answer3Fase1Etapa1, setAnswer3Fase1Etapa1] = useState("");
+  const [answer4Fase1Etapa1, setAnswer4Fase1Etapa1] = useState("");
+  const [answer5Fase1Etapa1, setAnswer5Fase1Etapa1] = useState("");
+  const [answer6Fase1Etapa1, setAnswer6Fase1Etapa1] = useState("");
+  const [answer7Fase1Etapa1, setAnswer7Fase1Etapa1] = useState("");
+  const [answer8Fase1Etapa1, setAnswer8Fase1Etapa1] = useState("");
+  const [answer9Fase1Etapa1, setAnswer9Fase1Etapa1] = useState("");
+  const [answer10Fase1Etapa1, setAnswer10Fase1Etapa1] = useState("");
+
+  // Etapa 2
+  const [answer1Fase1Etapa2, setAnswer1Fase1Etapa2] = useState("");
+  const [answer2Fase1Etapa2, setAnswer2Fase1Etapa2] = useState("");
+  const [answer3Fase1Etapa2, setAnswer3Fase1Etapa2] = useState("");
+  const [answer4Fase1Etapa2, setAnswer4Fase1Etapa2] = useState("");
+  const [answer5Fase1Etapa2, setAnswer5Fase1Etapa2] = useState("");
+  const [answer6Fase1Etapa2, setAnswer6Fase1Etapa2] = useState("");
+  const [answer7Fase1Etapa2, setAnswer7Fase1Etapa2] = useState("");
+  const [answer8Fase1Etapa2, setAnswer8Fase1Etapa2] = useState("");
+  const [answer9Fase1Etapa2, setAnswer9Fase1Etapa2] = useState("");
+  const [answer10Fase1Etapa2, setAnswer10Fase1Etapa2] = useState("");
+
+  // Etapa 3
+  const [answer1Fase1Etapa3, setAnswer1Fase1Etapa3] = useState("");
+  const [answer2Fase1Etapa3, setAnswer2Fase1Etapa3] = useState("");
+  const [answer3Fase1Etapa3, setAnswer3Fase1Etapa3] = useState("");
+  const [answer4Fase1Etapa3, setAnswer4Fase1Etapa3] = useState("");
+  const [answer5Fase1Etapa3, setAnswer5Fase1Etapa3] = useState("");
+  const [answer6Fase1Etapa3, setAnswer6Fase1Etapa3] = useState("");
+  const [answer7Fase1Etapa3, setAnswer7Fase1Etapa3] = useState("");
+  const [answer8Fase1Etapa3, setAnswer8Fase1Etapa3] = useState("");
+  const [answer9Fase1Etapa3, setAnswer9Fase1Etapa3] = useState("");
+  const [answer10Fase1Etapa3, setAnswer10Fase1Etapa3] = useState("");
+
+  // Etapa 4
+  const [answer1Fase1Etapa4, setAnswer1Fase1Etapa4] = useState("");
+  const [answer2Fase1Etapa4, setAnswer2Fase1Etapa4] = useState("");
+  const [answer3Fase1Etapa4, setAnswer3Fase1Etapa4] = useState("");
+  const [answer4Fase1Etapa4, setAnswer4Fase1Etapa4] = useState("");
+  const [answer5Fase1Etapa4, setAnswer5Fase1Etapa4] = useState("");
+  const [answer6Fase1Etapa4, setAnswer6Fase1Etapa4] = useState("");
+  const [answer7Fase1Etapa4, setAnswer7Fase1Etapa4] = useState("");
+  const [answer8Fase1Etapa4, setAnswer8Fase1Etapa4] = useState("");
+  const [answer9Fase1Etapa4, setAnswer9Fase1Etapa4] = useState("");
+  const [answer10Fase1Etapa4, setAnswer10Fase1Etapa4] = useState("");
+
+  // Fase 2
+
+  // Etapa 1
+  const [answer1Fase2Etapa1, setAnswer1Fase2Etapa1] = useState("");
+  const [answer2Fase2Etapa1, setAnswer2Fase2Etapa1] = useState("");
+  const [answer3Fase2Etapa1, setAnswer3Fase2Etapa1] = useState("");
+  const [answer4Fase2Etapa1, setAnswer4Fase2Etapa1] = useState("");
+  const [answer5Fase2Etapa1, setAnswer5Fase2Etapa1] = useState("");
+  const [answer6Fase2Etapa1, setAnswer6Fase2Etapa1] = useState("");
+  const [answer7Fase2Etapa1, setAnswer7Fase2Etapa1] = useState("");
+  const [answer8Fase2Etapa1, setAnswer8Fase2Etapa1] = useState("");
+  const [answer9Fase2Etapa1, setAnswer9Fase2Etapa1] = useState("");
+  const [answer10Fase2Etapa1, setAnswer10Fase2Etapa1] = useState("");
+
+  // Etapa 2
+  const [answer1Fase2Etapa2, setAnswer1Fase2Etapa2] = useState("");
+  const [answer2Fase2Etapa2, setAnswer2Fase2Etapa2] = useState("");
+  const [answer3Fase2Etapa2, setAnswer3Fase2Etapa2] = useState("");
+  const [answer4Fase2Etapa2, setAnswer4Fase2Etapa2] = useState("");
+  const [answer5Fase2Etapa2, setAnswer5Fase2Etapa2] = useState("");
+  const [answer6Fase2Etapa2, setAnswer6Fase2Etapa2] = useState("");
+  const [answer7Fase2Etapa2, setAnswer7Fase2Etapa2] = useState("");
+  const [answer8Fase2Etapa2, setAnswer8Fase2Etapa2] = useState("");
+  const [answer9Fase2Etapa2, setAnswer9Fase2Etapa2] = useState("");
+  const [answer10Fase2Etapa2, setAnswer10Fase2Etapa2] = useState("");
+
+  // Etapa 3
+  const [answer1Fase2Etapa3, setAnswer1Fase2Etapa3] = useState("");
+  const [answer2Fase2Etapa3, setAnswer2Fase2Etapa3] = useState("");
+  const [answer3Fase2Etapa3, setAnswer3Fase2Etapa3] = useState("");
+  const [answer4Fase2Etapa3, setAnswer4Fase2Etapa3] = useState("");
+  const [answer5Fase2Etapa3, setAnswer5Fase2Etapa3] = useState("");
+  const [answer6Fase2Etapa3, setAnswer6Fase2Etapa3] = useState("");
+  const [answer7Fase2Etapa3, setAnswer7Fase2Etapa3] = useState("");
+  const [answer8Fase2Etapa3, setAnswer8Fase2Etapa3] = useState("");
+  const [answer9Fase2Etapa3, setAnswer9Fase2Etapa3] = useState("");
+  const [answer10Fase2Etapa3, setAnswer10Fase2Etapa3] = useState("");
+
+  // Etapa 4
+  const [answer1Fase2Etapa4, setAnswer1Fase2Etapa4] = useState("");
+  const [answer2Fase2Etapa4, setAnswer2Fase2Etapa4] = useState("");
+  const [answer3Fase2Etapa4, setAnswer3Fase2Etapa4] = useState("");
+  const [answer4Fase2Etapa4, setAnswer4Fase2Etapa4] = useState("");
+  const [answer5Fase2Etapa4, setAnswer5Fase2Etapa4] = useState("");
+  const [answer6Fase2Etapa4, setAnswer6Fase2Etapa4] = useState("");
+  const [answer7Fase2Etapa4, setAnswer7Fase2Etapa4] = useState("");
+  const [answer8Fase2Etapa4, setAnswer8Fase2Etapa4] = useState("");
+  const [answer9Fase2Etapa4, setAnswer9Fase2Etapa4] = useState("");
+  const [answer10Fase2Etapa4, setAnswer10Fase2Etapa4] = useState("");
+
+  // Fase 3
+
+  // Etapa 1
+  const [answer1Fase3Etapa1, setAnswer1Fase3Etapa1] = useState("");
+  const [answer2Fase3Etapa1, setAnswer2Fase3Etapa1] = useState("");
+  const [answer3Fase3Etapa1, setAnswer3Fase3Etapa1] = useState("");
+  const [answer4Fase3Etapa1, setAnswer4Fase3Etapa1] = useState("");
+  const [answer5Fase3Etapa1, setAnswer5Fase3Etapa1] = useState("");
+  const [answer6Fase3Etapa1, setAnswer6Fase3Etapa1] = useState("");
+  const [answer7Fase3Etapa1, setAnswer7Fase3Etapa1] = useState("");
+  const [answer8Fase3Etapa1, setAnswer8Fase3Etapa1] = useState("");
+  const [answer9Fase3Etapa1, setAnswer9Fase3Etapa1] = useState("");
+  const [answer10Fase3Etapa1, setAnswer10Fase3Etapa1] = useState("");
+
+  // Etapa 2
+  const [answer1Fase3Etapa2, setAnswer1Fase3Etapa2] = useState("");
+  const [answer2Fase3Etapa2, setAnswer2Fase3Etapa2] = useState("");
+  const [answer3Fase3Etapa2, setAnswer3Fase3Etapa2] = useState("");
+  const [answer4Fase3Etapa2, setAnswer4Fase3Etapa2] = useState("");
+  const [answer5Fase3Etapa2, setAnswer5Fase3Etapa2] = useState("");
+  const [answer6Fase3Etapa2, setAnswer6Fase3Etapa2] = useState("");
+  const [answer7Fase3Etapa2, setAnswer7Fase3Etapa2] = useState("");
+  const [answer8Fase3Etapa2, setAnswer8Fase3Etapa2] = useState("");
+  const [answer9Fase3Etapa2, setAnswer9Fase3Etapa2] = useState("");
+  const [answer10Fase3Etapa2, setAnswer10Fase3Etapa2] = useState("");
+
+  // Etapa 3
+  const [answer1Fase3Etapa3, setAnswer1Fase3Etapa3] = useState("");
+  const [answer2Fase3Etapa3, setAnswer2Fase3Etapa3] = useState("");
+  const [answer3Fase3Etapa3, setAnswer3Fase3Etapa3] = useState("");
+  const [answer4Fase3Etapa3, setAnswer4Fase3Etapa3] = useState("");
+  const [answer5Fase3Etapa3, setAnswer5Fase3Etapa3] = useState("");
+  const [answer6Fase3Etapa3, setAnswer6Fase3Etapa3] = useState("");
+  const [answer7Fase3Etapa3, setAnswer7Fase3Etapa3] = useState("");
+  const [answer8Fase3Etapa3, setAnswer8Fase3Etapa3] = useState("");
+  const [answer9Fase3Etapa3, setAnswer9Fase3Etapa3] = useState("");
+  const [answer10Fase3Etapa3, setAnswer10Fase3Etapa3] = useState("");
+
+  // Etapa 4
+  const [answer1Fase3Etapa4, setAnswer1Fase3Etapa4] = useState("");
+  const [answer2Fase3Etapa4, setAnswer2Fase3Etapa4] = useState("");
+  const [answer3Fase3Etapa4, setAnswer3Fase3Etapa4] = useState("");
+  const [answer4Fase3Etapa4, setAnswer4Fase3Etapa4] = useState("");
+  const [answer5Fase3Etapa4, setAnswer5Fase3Etapa4] = useState("");
+  const [answer6Fase3Etapa4, setAnswer6Fase3Etapa4] = useState("");
+  const [answer7Fase3Etapa4, setAnswer7Fase3Etapa4] = useState("");
+  const [answer8Fase3Etapa4, setAnswer8Fase3Etapa4] = useState("");
+  const [answer9Fase3Etapa4, setAnswer9Fase3Etapa4] = useState("");
+  const [answer10Fase3Etapa4, setAnswer10Fase3Etapa4] = useState("");
+
+  // Fase 3
+
+  // Etapa 1
+  const [answer1Fase4Etapa1, setAnswer1Fase4Etapa1] = useState("");
+  const [answer2Fase4Etapa1, setAnswer2Fase4Etapa1] = useState("");
+  const [answer3Fase4Etapa1, setAnswer3Fase4Etapa1] = useState("");
+  const [answer4Fase4Etapa1, setAnswer4Fase4Etapa1] = useState("");
+  const [answer5Fase4Etapa1, setAnswer5Fase4Etapa1] = useState("");
+  const [answer6Fase4Etapa1, setAnswer6Fase4Etapa1] = useState("");
+  const [answer7Fase4Etapa1, setAnswer7Fase4Etapa1] = useState("");
+  const [answer8Fase4Etapa1, setAnswer8Fase4Etapa1] = useState("");
+  const [answer9Fase4Etapa1, setAnswer9Fase4Etapa1] = useState("");
+  const [answer10Fase4Etapa1, setAnswer10Fase4Etapa1] = useState("");
+
+  // Etapa 2
+  const [answer1Fase4Etapa2, setAnswer1Fase4Etapa2] = useState("");
+  const [answer2Fase4Etapa2, setAnswer2Fase4Etapa2] = useState("");
+  const [answer3Fase4Etapa2, setAnswer3Fase4Etapa2] = useState("");
+  const [answer4Fase4Etapa2, setAnswer4Fase4Etapa2] = useState("");
+  const [answer5Fase4Etapa2, setAnswer5Fase4Etapa2] = useState("");
+  const [answer6Fase4Etapa2, setAnswer6Fase4Etapa2] = useState("");
+  const [answer7Fase4Etapa2, setAnswer7Fase4Etapa2] = useState("");
+  const [answer8Fase4Etapa2, setAnswer8Fase4Etapa2] = useState("");
+  const [answer9Fase4Etapa2, setAnswer9Fase4Etapa2] = useState("");
+  const [answer10Fase4Etapa2, setAnswer10Fase4Etapa2] = useState("");
+
+  // Etapa 3
+  const [answer1Fase4Etapa3, setAnswer1Fase4Etapa3] = useState("");
+  const [answer2Fase4Etapa3, setAnswer2Fase4Etapa3] = useState("");
+  const [answer3Fase4Etapa3, setAnswer3Fase4Etapa3] = useState("");
+  const [answer4Fase4Etapa3, setAnswer4Fase4Etapa3] = useState("");
+  const [answer5Fase4Etapa3, setAnswer5Fase4Etapa3] = useState("");
+  const [answer6Fase4Etapa3, setAnswer6Fase4Etapa3] = useState("");
+  const [answer7Fase4Etapa3, setAnswer7Fase4Etapa3] = useState("");
+  const [answer8Fase4Etapa3, setAnswer8Fase4Etapa3] = useState("");
+  const [answer9Fase4Etapa3, setAnswer9Fase4Etapa3] = useState("");
+  const [answer10Fase4Etapa3, setAnswer10Fase4Etapa3] = useState("");
+
+  // Etapa 4
+  const [answer1Fase4Etapa4, setAnswer1Fase4Etapa4] = useState("");
+  const [answer2Fase4Etapa4, setAnswer2Fase4Etapa4] = useState("");
+  const [answer3Fase4Etapa4, setAnswer3Fase4Etapa4] = useState("");
+  const [answer4Fase4Etapa4, setAnswer4Fase4Etapa4] = useState("");
+  const [answer5Fase4Etapa4, setAnswer5Fase4Etapa4] = useState("");
+  const [answer6Fase4Etapa4, setAnswer6Fase4Etapa4] = useState("");
+  const [answer7Fase4Etapa4, setAnswer7Fase4Etapa4] = useState("");
+  const [answer8Fase4Etapa4, setAnswer8Fase4Etapa4] = useState("");
+  const [answer9Fase4Etapa4, setAnswer9Fase4Etapa4] = useState("");
+  const [answer10Fase4Etapa4, setAnswer10Fase4Etapa4] = useState("");
+
   function getPersonalData() {
     var docRef = db.collection("users").doc(uid);
 
@@ -365,6 +567,224 @@ export default function EditUser() {
       });
   }
 
+  function getAnswers() {
+    var docRef = db.collection("answers").doc(uid);
+
+    docRef
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          const data = doc.data();
+
+          // Fase 1
+
+          // Etapa 1
+          setAnswer1Fase1Etapa1(data.fase1.etapa1[1]);
+          setAnswer2Fase1Etapa1(data.fase1.etapa1[2]);
+          setAnswer3Fase1Etapa1(data.fase1.etapa1[3]);
+          setAnswer4Fase1Etapa1(data.fase1.etapa1[4]);
+          setAnswer5Fase1Etapa1(data.fase1.etapa1[5]);
+          setAnswer6Fase1Etapa1(data.fase1.etapa1[6]);
+          setAnswer7Fase1Etapa1(data.fase1.etapa1[7]);
+          setAnswer8Fase1Etapa1(data.fase1.etapa1[8]);
+          setAnswer9Fase1Etapa1(data.fase1.etapa1[9]);
+          setAnswer10Fase1Etapa1(data.fase1.etapa1[10]);
+
+          // Etapa 2
+          setAnswer1Fase1Etapa2(data.fase1.etapa2[1]);
+          setAnswer2Fase1Etapa2(data.fase1.etapa2[2]);
+          setAnswer3Fase1Etapa2(data.fase1.etapa2[3]);
+          setAnswer4Fase1Etapa2(data.fase1.etapa2[4]);
+          setAnswer5Fase1Etapa2(data.fase1.etapa2[5]);
+          setAnswer6Fase1Etapa2(data.fase1.etapa2[6]);
+          setAnswer7Fase1Etapa2(data.fase1.etapa2[7]);
+          setAnswer8Fase1Etapa2(data.fase1.etapa2[8]);
+          setAnswer9Fase1Etapa2(data.fase1.etapa2[9]);
+          setAnswer10Fase1Etapa2(data.fase1.etapa2[10]);
+
+          // Etapa 3
+          setAnswer1Fase1Etapa3(data.fase1.etapa3[1]);
+          setAnswer2Fase1Etapa3(data.fase1.etapa3[2]);
+          setAnswer3Fase1Etapa3(data.fase1.etapa3[3]);
+          setAnswer4Fase1Etapa3(data.fase1.etapa3[4]);
+          setAnswer5Fase1Etapa3(data.fase1.etapa3[5]);
+          setAnswer6Fase1Etapa3(data.fase1.etapa3[6]);
+          setAnswer7Fase1Etapa3(data.fase1.etapa3[7]);
+          setAnswer8Fase1Etapa3(data.fase1.etapa3[8]);
+          setAnswer9Fase1Etapa3(data.fase1.etapa3[9]);
+          setAnswer10Fase1Etapa3(data.fase1.etapa3[10]);
+
+          // Etapa 4
+          setAnswer1Fase1Etapa4(data.fase1.etapa4[1]);
+          setAnswer2Fase1Etapa4(data.fase1.etapa4[2]);
+          setAnswer3Fase1Etapa4(data.fase1.etapa4[3]);
+          setAnswer4Fase1Etapa4(data.fase1.etapa4[4]);
+          setAnswer5Fase1Etapa4(data.fase1.etapa4[5]);
+          setAnswer6Fase1Etapa4(data.fase1.etapa4[6]);
+          setAnswer7Fase1Etapa4(data.fase1.etapa4[7]);
+          setAnswer8Fase1Etapa4(data.fase1.etapa4[8]);
+          setAnswer9Fase1Etapa4(data.fase1.etapa4[9]);
+          setAnswer10Fase1Etapa4(data.fase1.etapa4[10]);
+
+          // Fase 2
+
+          // Etapa 1
+          setAnswer1Fase2Etapa1(data.fase2.etapa1[1]);
+          setAnswer2Fase2Etapa1(data.fase2.etapa1[2]);
+          setAnswer3Fase2Etapa1(data.fase2.etapa1[3]);
+          setAnswer4Fase2Etapa1(data.fase2.etapa1[4]);
+          setAnswer5Fase2Etapa1(data.fase2.etapa1[5]);
+          setAnswer6Fase2Etapa1(data.fase2.etapa1[6]);
+          setAnswer7Fase2Etapa1(data.fase2.etapa1[7]);
+          setAnswer8Fase2Etapa1(data.fase2.etapa1[8]);
+          setAnswer9Fase2Etapa1(data.fase2.etapa1[9]);
+          setAnswer10Fase2Etapa1(data.fase2.etapa1[10]);
+
+          // Etapa 2
+          setAnswer1Fase2Etapa2(data.fase2.etapa2[1]);
+          setAnswer2Fase2Etapa2(data.fase2.etapa2[2]);
+          setAnswer3Fase2Etapa2(data.fase2.etapa2[3]);
+          setAnswer4Fase2Etapa2(data.fase2.etapa2[4]);
+          setAnswer5Fase2Etapa2(data.fase2.etapa2[5]);
+          setAnswer6Fase2Etapa2(data.fase2.etapa2[6]);
+          setAnswer7Fase2Etapa2(data.fase2.etapa2[7]);
+          setAnswer8Fase2Etapa2(data.fase2.etapa2[8]);
+          setAnswer9Fase2Etapa2(data.fase2.etapa2[9]);
+          setAnswer10Fase2Etapa2(data.fase2.etapa2[10]);
+
+          // Etapa 3
+          setAnswer1Fase2Etapa3(data.fase2.etapa3[1]);
+          setAnswer2Fase2Etapa3(data.fase2.etapa3[2]);
+          setAnswer3Fase2Etapa3(data.fase2.etapa3[3]);
+          setAnswer4Fase2Etapa3(data.fase2.etapa3[4]);
+          setAnswer5Fase2Etapa3(data.fase2.etapa3[5]);
+          setAnswer6Fase2Etapa3(data.fase2.etapa3[6]);
+          setAnswer7Fase2Etapa3(data.fase2.etapa3[7]);
+          setAnswer8Fase2Etapa3(data.fase2.etapa3[8]);
+          setAnswer9Fase2Etapa3(data.fase2.etapa3[9]);
+          setAnswer10Fase2Etapa3(data.fase2.etapa3[10]);
+
+          // Etapa 4
+          setAnswer1Fase2Etapa4(data.fase2.etapa4[1]);
+          setAnswer2Fase2Etapa4(data.fase2.etapa4[2]);
+          setAnswer3Fase2Etapa4(data.fase2.etapa4[3]);
+          setAnswer4Fase2Etapa4(data.fase2.etapa4[4]);
+          setAnswer5Fase2Etapa4(data.fase2.etapa4[5]);
+          setAnswer6Fase2Etapa4(data.fase2.etapa4[6]);
+          setAnswer7Fase2Etapa4(data.fase2.etapa4[7]);
+          setAnswer8Fase2Etapa4(data.fase2.etapa4[8]);
+          setAnswer9Fase2Etapa4(data.fase2.etapa4[9]);
+          setAnswer10Fase2Etapa4(data.fase2.etapa4[10]);
+
+          // Fase 3
+
+          // Etapa 1
+          setAnswer1Fase3Etapa1(data.fase3.etapa1[1]);
+          setAnswer2Fase3Etapa1(data.fase3.etapa1[2]);
+          setAnswer3Fase3Etapa1(data.fase3.etapa1[3]);
+          setAnswer4Fase3Etapa1(data.fase3.etapa1[4]);
+          setAnswer5Fase3Etapa1(data.fase3.etapa1[5]);
+          setAnswer6Fase3Etapa1(data.fase3.etapa1[6]);
+          setAnswer7Fase3Etapa1(data.fase3.etapa1[7]);
+          setAnswer8Fase3Etapa1(data.fase3.etapa1[8]);
+          setAnswer9Fase3Etapa1(data.fase3.etapa1[9]);
+          setAnswer10Fase3Etapa1(data.fase3.etapa1[10]);
+
+          // Etapa 2
+          setAnswer1Fase3Etapa2(data.fase3.etapa2[1]);
+          setAnswer2Fase3Etapa2(data.fase3.etapa2[2]);
+          setAnswer3Fase3Etapa2(data.fase3.etapa2[3]);
+          setAnswer4Fase3Etapa2(data.fase3.etapa2[4]);
+          setAnswer5Fase3Etapa2(data.fase3.etapa2[5]);
+          setAnswer6Fase3Etapa2(data.fase3.etapa2[6]);
+          setAnswer7Fase3Etapa2(data.fase3.etapa2[7]);
+          setAnswer8Fase3Etapa2(data.fase3.etapa2[8]);
+          setAnswer9Fase3Etapa2(data.fase3.etapa2[9]);
+          setAnswer10Fase3Etapa2(data.fase3.etapa2[10]);
+
+          // Etapa 3
+          setAnswer1Fase3Etapa3(data.fase3.etapa3[1]);
+          setAnswer2Fase3Etapa3(data.fase3.etapa3[2]);
+          setAnswer3Fase3Etapa3(data.fase3.etapa3[3]);
+          setAnswer4Fase3Etapa3(data.fase3.etapa3[4]);
+          setAnswer5Fase3Etapa3(data.fase3.etapa3[5]);
+          setAnswer6Fase3Etapa3(data.fase3.etapa3[6]);
+          setAnswer7Fase3Etapa3(data.fase3.etapa3[7]);
+          setAnswer8Fase3Etapa3(data.fase3.etapa3[8]);
+          setAnswer9Fase3Etapa3(data.fase3.etapa3[9]);
+          setAnswer10Fase3Etapa3(data.fase3.etapa3[10]);
+
+          // Etapa 4
+          setAnswer1Fase3Etapa4(data.fase3.etapa4[1]);
+          setAnswer2Fase3Etapa4(data.fase3.etapa4[2]);
+          setAnswer3Fase3Etapa4(data.fase3.etapa4[3]);
+          setAnswer4Fase3Etapa4(data.fase3.etapa4[4]);
+          setAnswer5Fase3Etapa4(data.fase3.etapa4[5]);
+          setAnswer6Fase3Etapa4(data.fase3.etapa4[6]);
+          setAnswer7Fase3Etapa4(data.fase3.etapa4[7]);
+          setAnswer8Fase3Etapa4(data.fase3.etapa4[8]);
+          setAnswer9Fase3Etapa4(data.fase3.etapa4[9]);
+          setAnswer10Fase3Etapa4(data.fase3.etapa4[10]);
+
+          // Fase 4
+
+          // Etapa 1
+          setAnswer1Fase4Etapa1(data.fase4.etapa1[1]);
+          setAnswer2Fase4Etapa1(data.fase4.etapa1[2]);
+          setAnswer3Fase4Etapa1(data.fase4.etapa1[3]);
+          setAnswer4Fase4Etapa1(data.fase4.etapa1[4]);
+          setAnswer5Fase4Etapa1(data.fase4.etapa1[5]);
+          setAnswer6Fase4Etapa1(data.fase4.etapa1[6]);
+          setAnswer7Fase4Etapa1(data.fase4.etapa1[7]);
+          setAnswer8Fase4Etapa1(data.fase4.etapa1[8]);
+          setAnswer9Fase4Etapa1(data.fase4.etapa1[9]);
+          setAnswer10Fase4Etapa1(data.fase4.etapa1[10]);
+
+          // Etapa 2
+          setAnswer1Fase4Etapa2(data.fase4.etapa2[1]);
+          setAnswer2Fase4Etapa2(data.fase4.etapa2[2]);
+          setAnswer3Fase4Etapa2(data.fase4.etapa2[3]);
+          setAnswer4Fase4Etapa2(data.fase4.etapa2[4]);
+          setAnswer5Fase4Etapa2(data.fase4.etapa2[5]);
+          setAnswer6Fase4Etapa2(data.fase4.etapa2[6]);
+          setAnswer7Fase4Etapa2(data.fase4.etapa2[7]);
+          setAnswer8Fase4Etapa2(data.fase4.etapa2[8]);
+          setAnswer9Fase4Etapa2(data.fase4.etapa2[9]);
+          setAnswer10Fase4Etapa2(data.fase4.etapa2[10]);
+
+          // Etapa 3
+          setAnswer1Fase4Etapa3(data.fase4.etapa3[1]);
+          setAnswer2Fase4Etapa3(data.fase4.etapa3[2]);
+          setAnswer3Fase4Etapa3(data.fase4.etapa3[3]);
+          setAnswer4Fase4Etapa3(data.fase4.etapa3[4]);
+          setAnswer5Fase4Etapa3(data.fase4.etapa3[5]);
+          setAnswer6Fase4Etapa3(data.fase4.etapa3[6]);
+          setAnswer7Fase4Etapa3(data.fase4.etapa3[7]);
+          setAnswer8Fase4Etapa3(data.fase4.etapa3[8]);
+          setAnswer9Fase4Etapa3(data.fase4.etapa3[9]);
+          setAnswer10Fase4Etapa3(data.fase4.etapa3[10]);
+
+          // Etapa 4
+          setAnswer1Fase4Etapa4(data.fase4.etapa4[1]);
+          setAnswer2Fase4Etapa4(data.fase4.etapa4[2]);
+          setAnswer3Fase4Etapa4(data.fase4.etapa4[3]);
+          setAnswer4Fase4Etapa4(data.fase4.etapa4[4]);
+          setAnswer5Fase4Etapa4(data.fase4.etapa4[5]);
+          setAnswer6Fase4Etapa4(data.fase4.etapa4[6]);
+          setAnswer7Fase4Etapa4(data.fase4.etapa4[7]);
+          setAnswer8Fase4Etapa4(data.fase4.etapa4[8]);
+          setAnswer9Fase4Etapa4(data.fase4.etapa4[9]);
+          setAnswer10Fase4Etapa4(data.fase4.etapa4[10]);
+        } else {
+          // doc.data() will be undefined in this case
+          console.log("No such document!");
+        }
+      })
+      .catch((error) => {
+        console.log("Error getting document:", error);
+      });
+  }
+
   function updatePersonalData() {
     db.collection("users")
       .doc(uid)
@@ -553,6 +973,7 @@ export default function EditUser() {
     getPersonalData();
     getQuizFinish();
     getScore();
+    getAnswers();
   }, []);
 
   return (
@@ -895,8 +1316,233 @@ export default function EditUser() {
             </button>
             <hr />
           </div>
-        </div>
 
+          <div className="editUser">
+            <h1>Histórico de Respostas</h1>
+            <div className="phase">
+              <div className="stage">
+                <h1>Fase 1</h1>
+                <div className="slotAnswers">
+                  <h2>Etapa 1</h2>
+                  <h3>1. {answer1Fase1Etapa1}</h3>
+                  <h3>2. {answer2Fase1Etapa1}</h3>
+                  <h3>3. {answer3Fase1Etapa1}</h3>
+                  <h3>4. {answer4Fase1Etapa1}</h3>
+                  <h3>5. {answer5Fase1Etapa1}</h3>
+                  <h3>6. {answer6Fase1Etapa1}</h3>
+                  <h3>7. {answer7Fase1Etapa1}</h3>
+                  <h3>8. {answer8Fase1Etapa1}</h3>
+                  <h3>9. {answer9Fase1Etapa1}</h3>
+                  <h3>10. {answer10Fase1Etapa1}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 2</h2>
+                  <h3>1. {answer1Fase1Etapa2}</h3>
+                  <h3>2. {answer2Fase1Etapa2}</h3>
+                  <h3>3. {answer3Fase1Etapa2}</h3>
+                  <h3>4. {answer4Fase1Etapa2}</h3>
+                  <h3>5. {answer5Fase1Etapa2}</h3>
+                  <h3>6. {answer6Fase1Etapa2}</h3>
+                  <h3>7. {answer7Fase1Etapa2}</h3>
+                  <h3>8. {answer8Fase1Etapa2}</h3>
+                  <h3>9. {answer9Fase1Etapa2}</h3>
+                  <h3>10. {answer10Fase1Etapa2}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 3</h2>
+                  <h3>1. {answer1Fase1Etapa3}</h3>
+                  <h3>2. {answer2Fase1Etapa3}</h3>
+                  <h3>3. {answer3Fase1Etapa3}</h3>
+                  <h3>4. {answer4Fase1Etapa3}</h3>
+                  <h3>5. {answer5Fase1Etapa3}</h3>
+                  <h3>6. {answer6Fase1Etapa3}</h3>
+                  <h3>7. {answer7Fase1Etapa3}</h3>
+                  <h3>8. {answer8Fase1Etapa3}</h3>
+                  <h3>9. {answer9Fase1Etapa3}</h3>
+                  <h3>10. {answer10Fase1Etapa3}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 4</h2>
+                  <h3>1. {answer1Fase1Etapa4}</h3>
+                  <h3>2. {answer2Fase1Etapa4}</h3>
+                  <h3>3. {answer3Fase1Etapa4}</h3>
+                  <h3>4. {answer4Fase1Etapa4}</h3>
+                  <h3>5. {answer5Fase1Etapa4}</h3>
+                  <h3>6. {answer6Fase1Etapa4}</h3>
+                  <h3>7. {answer7Fase1Etapa4}</h3>
+                  <h3>8. {answer8Fase1Etapa4}</h3>
+                  <h3>9. {answer9Fase1Etapa4}</h3>
+                  <h3>10. {answer10Fase1Etapa4}</h3>
+                </div>
+              </div>
+              <div className="stage">
+                <h1>Fase 2</h1>
+                <div className="slotAnswers">
+                  <h2>Etapa 1</h2>
+                  <h3>1. {answer1Fase2Etapa1}</h3>
+                  <h3>2. {answer2Fase2Etapa1}</h3>
+                  <h3>3. {answer3Fase2Etapa1}</h3>
+                  <h3>4. {answer4Fase2Etapa1}</h3>
+                  <h3>5. {answer5Fase2Etapa1}</h3>
+                  <h3>6. {answer6Fase2Etapa1}</h3>
+                  <h3>7. {answer7Fase2Etapa1}</h3>
+                  <h3>8. {answer8Fase2Etapa1}</h3>
+                  <h3>9. {answer9Fase2Etapa1}</h3>
+                  <h3>10. {answer10Fase2Etapa1}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 2</h2>
+                  <h3>1. {answer1Fase2Etapa2}</h3>
+                  <h3>2. {answer2Fase2Etapa2}</h3>
+                  <h3>3. {answer3Fase2Etapa2}</h3>
+                  <h3>4. {answer4Fase2Etapa2}</h3>
+                  <h3>5. {answer5Fase2Etapa2}</h3>
+                  <h3>6. {answer6Fase2Etapa2}</h3>
+                  <h3>7. {answer7Fase2Etapa2}</h3>
+                  <h3>8. {answer8Fase2Etapa2}</h3>
+                  <h3>9. {answer9Fase2Etapa2}</h3>
+                  <h3>10. {answer10Fase2Etapa2}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 3</h2>
+                  <h3>1. {answer1Fase2Etapa3}</h3>
+                  <h3>2. {answer2Fase2Etapa3}</h3>
+                  <h3>3. {answer3Fase2Etapa3}</h3>
+                  <h3>4. {answer4Fase2Etapa3}</h3>
+                  <h3>5. {answer5Fase2Etapa3}</h3>
+                  <h3>6. {answer6Fase2Etapa3}</h3>
+                  <h3>7. {answer7Fase2Etapa3}</h3>
+                  <h3>8. {answer8Fase2Etapa3}</h3>
+                  <h3>9. {answer9Fase2Etapa3}</h3>
+                  <h3>10. {answer10Fase2Etapa3}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 4</h2>
+                  <h3>1. {answer1Fase2Etapa4}</h3>
+                  <h3>2. {answer2Fase2Etapa4}</h3>
+                  <h3>3. {answer3Fase2Etapa4}</h3>
+                  <h3>4. {answer4Fase2Etapa4}</h3>
+                  <h3>5. {answer5Fase2Etapa4}</h3>
+                  <h3>6. {answer6Fase2Etapa4}</h3>
+                  <h3>7. {answer7Fase2Etapa4}</h3>
+                  <h3>8. {answer8Fase2Etapa4}</h3>
+                  <h3>9. {answer9Fase2Etapa4}</h3>
+                  <h3>10. {answer10Fase2Etapa4}</h3>
+                </div>
+              </div>
+              <div className="stage">
+                <h1>Fase 3</h1>
+                <div className="slotAnswers">
+                  <h2>Etapa 1</h2>
+                  <h3>1. {answer1Fase3Etapa1}</h3>
+                  <h3>2. {answer2Fase3Etapa1}</h3>
+                  <h3>3. {answer3Fase3Etapa1}</h3>
+                  <h3>4. {answer4Fase3Etapa1}</h3>
+                  <h3>5. {answer5Fase3Etapa1}</h3>
+                  <h3>6. {answer6Fase3Etapa1}</h3>
+                  <h3>7. {answer7Fase3Etapa1}</h3>
+                  <h3>8. {answer8Fase3Etapa1}</h3>
+                  <h3>9. {answer9Fase3Etapa1}</h3>
+                  <h3>10. {answer10Fase3Etapa1}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 2</h2>
+                  <h3>1. {answer1Fase3Etapa2}</h3>
+                  <h3>2. {answer2Fase3Etapa2}</h3>
+                  <h3>3. {answer3Fase3Etapa2}</h3>
+                  <h3>4. {answer4Fase3Etapa2}</h3>
+                  <h3>5. {answer5Fase3Etapa2}</h3>
+                  <h3>6. {answer6Fase3Etapa2}</h3>
+                  <h3>7. {answer7Fase3Etapa2}</h3>
+                  <h3>8. {answer8Fase3Etapa2}</h3>
+                  <h3>9. {answer9Fase3Etapa2}</h3>
+                  <h3>10. {answer10Fase3Etapa2}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 3</h2>
+                  <h3>1. {answer1Fase3Etapa3}</h3>
+                  <h3>2. {answer2Fase3Etapa3}</h3>
+                  <h3>3. {answer3Fase3Etapa3}</h3>
+                  <h3>4. {answer4Fase3Etapa3}</h3>
+                  <h3>5. {answer5Fase3Etapa3}</h3>
+                  <h3>6. {answer6Fase3Etapa3}</h3>
+                  <h3>7. {answer7Fase3Etapa3}</h3>
+                  <h3>8. {answer8Fase3Etapa3}</h3>
+                  <h3>9. {answer9Fase3Etapa3}</h3>
+                  <h3>10. {answer10Fase3Etapa3}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 4</h2>
+                  <h3>1. {answer1Fase3Etapa4}</h3>
+                  <h3>2. {answer2Fase3Etapa4}</h3>
+                  <h3>3. {answer3Fase3Etapa4}</h3>
+                  <h3>4. {answer4Fase3Etapa4}</h3>
+                  <h3>5. {answer5Fase3Etapa4}</h3>
+                  <h3>6. {answer6Fase3Etapa4}</h3>
+                  <h3>7. {answer7Fase3Etapa4}</h3>
+                  <h3>8. {answer8Fase3Etapa4}</h3>
+                  <h3>9. {answer9Fase3Etapa4}</h3>
+                  <h3>10. {answer10Fase3Etapa4}</h3>
+                </div>
+              </div>
+              <div className="stage">
+                <h1>Fase 4</h1>
+                <div className="slotAnswers">
+                  <h2>Etapa 1</h2>
+                  <h3>1. {answer1Fase4Etapa1}</h3>
+                  <h3>2. {answer2Fase4Etapa1}</h3>
+                  <h3>3. {answer3Fase4Etapa1}</h3>
+                  <h3>4. {answer4Fase4Etapa1}</h3>
+                  <h3>5. {answer5Fase4Etapa1}</h3>
+                  <h3>6. {answer6Fase4Etapa1}</h3>
+                  <h3>7. {answer7Fase4Etapa1}</h3>
+                  <h3>8. {answer8Fase4Etapa1}</h3>
+                  <h3>9. {answer9Fase4Etapa1}</h3>
+                  <h3>10. {answer10Fase4Etapa1}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 2</h2>
+                  <h3>1. {answer1Fase4Etapa2}</h3>
+                  <h3>2. {answer2Fase4Etapa2}</h3>
+                  <h3>3. {answer3Fase4Etapa2}</h3>
+                  <h3>4. {answer4Fase4Etapa2}</h3>
+                  <h3>5. {answer5Fase4Etapa2}</h3>
+                  <h3>6. {answer6Fase4Etapa2}</h3>
+                  <h3>7. {answer7Fase4Etapa2}</h3>
+                  <h3>8. {answer8Fase4Etapa2}</h3>
+                  <h3>9. {answer9Fase4Etapa2}</h3>
+                  <h3>10. {answer10Fase4Etapa2}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 3</h2>
+                  <h3>1. {answer1Fase4Etapa3}</h3>
+                  <h3>2. {answer2Fase4Etapa3}</h3>
+                  <h3>3. {answer3Fase4Etapa3}</h3>
+                  <h3>4. {answer4Fase4Etapa3}</h3>
+                  <h3>5. {answer5Fase4Etapa3}</h3>
+                  <h3>6. {answer6Fase4Etapa3}</h3>
+                  <h3>7. {answer7Fase4Etapa3}</h3>
+                  <h3>8. {answer8Fase4Etapa3}</h3>
+                  <h3>9. {answer9Fase4Etapa3}</h3>
+                  <h3>10. {answer10Fase4Etapa3}</h3>
+                </div>
+                <div className="slotAnswers">
+                  <h2>Etapa 4</h2>
+                  <h3>1. {answer1Fase4Etapa4}</h3>
+                  <h3>2. {answer2Fase4Etapa4}</h3>
+                  <h3>3. {answer3Fase4Etapa4}</h3>
+                  <h3>4. {answer4Fase4Etapa4}</h3>
+                  <h3>5. {answer5Fase4Etapa4}</h3>
+                  <h3>6. {answer6Fase4Etapa4}</h3>
+                  <h3>7. {answer7Fase4Etapa4}</h3>
+                  <h3>8. {answer8Fase4Etapa4}</h3>
+                  <h3>9. {answer9Fase4Etapa4}</h3>
+                  <h3>10. {answer10Fase4Etapa4}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="editUser">
           <h1>Pontuação</h1>
           <h1>Fase 1</h1>
@@ -1603,6 +2249,7 @@ export default function EditUser() {
             Atualizar Dados
           </button>
         </div>
+        4{" "}
       </div>
     </div>
   );

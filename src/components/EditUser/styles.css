@@ -87,3 +87,14 @@
   padding: 0 5px;
   margin-top: 8px;
 }
+
+.containerEditUser .contentEditUser .editUser .phase .stage .slotAnswers {
+  margin: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.containerEditUser .contentEditUser .editUser .phase .stage .slotAnswers h3 {
+  margin-top: 10px;
+}
