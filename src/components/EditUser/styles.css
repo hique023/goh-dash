@@ -32,6 +32,14 @@
   border-radius: 10px;
 }
 
+.containerEditUser .contentEditUser .editUser .slotImage img {
+  display: flex;
+  margin: 0px auto 10px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
 .containerEditUser .contentEditUser .editUser h1 {
   display: flex;
   justify-content: center;

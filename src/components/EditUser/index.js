@@ -985,6 +985,9 @@ export default function EditUser() {
       <div className="contentEditUser">
         <div className="editUser">
           <h1>Dados Pessoais</h1>
+          <div className="slotImage">
+            <img src={avatar} />
+          </div>
           <div className="slot">
             <h1>Avatar</h1>
             <input
