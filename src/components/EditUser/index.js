@@ -20,6 +20,7 @@ export default function EditUser() {
   const [name, setName] = useState("");
   const [score, setScore] = useState("");
   const [uidDb, setUidDb] = useState("");
+  const [profileImg, setProfileImg] = useState(avatar);
 
   const [trueVar] = useState(Boolean("true"));
   const [falseVar] = useState(false);
@@ -969,6 +970,27 @@ export default function EditUser() {
       });
   }
 
+  async function imageHandler(e) {
+    const reader = new FileReader();
+
+    const file = e.target.files[0];
+    const storageRef = firebase.storage().ref();
+    // const fileRef = storageRef.child(`herois/${file.name}`);
+    const fileRef = storageRef.child(`herois/${firstName}`);
+
+    reader.onload = (e) => {
+      if (reader.readyState === 2) {
+        setProfileImg(e.target.result);
+
+        fileRef.put(file).then(async () => {
+          await setAvatar(await fileRef.getDownloadURL());
+          // setSubmitButton(false);
+        });
+      }
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  }
+
   useEffect(() => {
     getPersonalData();
     getQuizFinish();
@@ -988,6 +1010,20 @@ export default function EditUser() {
           <div className="slotImage">
             <img src={avatar} />
           </div>
+
+          <div className="slot">
+            <h1>Atualização do Avatar</h1>
+            <input
+              className="inputImage"
+              type="file"
+              accept="image/*"
+              name="image-upload"
+              id="imageUpload"
+              required
+              onChange={imageHandler}
+            />
+          </div>
+
           <div className="slot">
             <h1>Avatar</h1>
             <input
