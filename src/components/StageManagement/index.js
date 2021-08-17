@@ -93,7 +93,7 @@ export default function StageManagement() {
   }
 
   function getStatusStage3() {
-    var docRef = db.collection("status").doc("fase2");
+    var docRef = db.collection("status").doc("fase3");
 
     docRef
       .get()
@@ -121,7 +121,7 @@ export default function StageManagement() {
   }
 
   function getStatusStage4() {
-    var docRef = db.collection("status").doc("fase2");
+    var docRef = db.collection("status").doc("fase4");
 
     docRef
       .get()
